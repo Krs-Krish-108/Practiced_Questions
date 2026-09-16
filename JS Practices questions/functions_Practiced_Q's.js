@@ -27,17 +27,20 @@ console.log(counter()); ------> 6
 */
 
 //= Answer
-function createCounter(start){
-    let count = start;
-    let intail_val = start;
-    return function(){
-        function reset(){
-            count= intail_val; 
-        }
-        counter.reset = reset;
-        count++;
-        return count;
-    }    
-}
+// function createCounter(start){
+//     let count = start;
+//     let intail_val = start;
+//     return function(){
+//         function reset(){
+//             count= intail_val; 
+//         }
+//         counter.reset = reset;
+//         count++;
+//         return count;
+//     }    
+// }
 
-let counter = createCounter(5);
+// let counter = createCounter(5);
+
+
+//: Question 2
