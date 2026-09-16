@@ -1,0 +1,12 @@
+Question 1:
+    Once we Add Position absolute To a nav bar Which Contains 2 div Tags That was perfectly fine, one on the left side and one on the right side. Now it behaves like it shrinks to fit its content and appears to be written in a straight line without any gaps, as if They were Given Display flex but Justify content space between. Now to fix this, we need to ensure that the nav bar has a defined width and height, and that the child divs are positioned correctly within it. Now why does it happen?
+
+Answer 1:
+    When you apply `position: absolute` to a nav bar, it is taken out of the normal document flow. This means that it no longer respects the layout of its parent container, and its size will shrink to fit its content. The child divs inside the nav bar will also be positioned based on their own content, which can lead to them appearing in a straight line without any gaps. 
+
+    To fix this issue, you need to define a specific width and height for the nav bar so that it has a defined space to occupy. Additionally, you can use CSS properties like `display: flex` and `justify-content: space-between` on the nav bar to ensure that the child divs are spaced correctly within it. This way, even with `position: absolute`, the nav bar will maintain its intended layout and spacing for its child elements. 
+
+    When we add position absolute to a nav bar, it is taken out of the normal document flow. This means that the nav bar no longer occupies space in the layout, and its child elements (the two div tags) will be positioned relative to the nearest positioned ancestor (which could be the body or another container). As a result, the divs will align themselves based on their content and will not have any gaps between them, giving the appearance of being in a straight line. This behavior is similar to using display: flex with justify-content: space-between, but without the spacing because the parent container is no longer influencing their layout.
+
+
+QUestion 2:
